@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:text="@string/timer_state_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTimerState"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/timer_state_value"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewTimerStateValue"
+            android:layout_alignParentRight="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/holo_orange_dark" />
+        <TextView
+            android:text="@string/arduino_server_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewServer"
+            android:layout_below="@id/textViewTimerState"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:text="@string/arduino_server_connect"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewServerConnect"
+            android:layout_below="@id/textViewTimerStateValue"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_red_dark" />
+        <TextView
+            android:text="@string/ip_address_text"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:id="@+id/textViewIPAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textViewServer" />
+        <TextView
+            android:text="@string/ip_port_text"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:id="@+id/textViewIPPort"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textViewServerConnect" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextIPAddress"
+            android:text="@string/ip_address_value"
+            android:lines="1"
+            android:minLines="1"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_below="@id/textViewIPAddress"
+            android:layout_alignParentLeft="true" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextIPPort"
+            android:text="@string/ip_port_value"
+            android:lines="1"
+            android:minLines="1"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:layout_below="@id/textViewIPPort"
+            android:layout_alignParentRight="true" />
+        <Button
+            android:text="@string/button_connect_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextIPAddress"
+            android:id="@+id/buttonConnect"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#add8e6ff" />
+        <Button
+            android:text="@string/button_pin_state_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextIPPort"
+            android:id="@+id/buttonChangePinState"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#add8e6ff" />
+        <TextView
+            android:text="@string/pin_state_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewChangePinState"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/buttonConnect"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/change_pin_state_value"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewChangePinStateValue"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/buttonChangePinState"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/sensor_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewSensor"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textViewChangePinState"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/sensor_value"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewSensorValue"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textViewChangePinStateValue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/debug_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewDebug"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textViewSensor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:text="@string/debug_value"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/textViewDebugValue"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textViewSensorValue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+</LinearLayout>

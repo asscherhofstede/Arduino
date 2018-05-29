@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="application_name">Domotica App</string>
+  <string name="timer_state_text">Time</string>
+  <string name="timer_state_value">OFF</string>
+  <string name="arduino_server_text">Arduino server</string>
+  <string name="arduino_server_connect">Not connected</string>
+  <string name="ip_address_text">IP Address</string>
+  <string name="ip_address_value">192.168.1.3</string>
+  <string name="ip_port_text">IP Port</string>
+  <string name="ip_port_value">3300</string>
+  <string name="button_connect_text">Connect</string>
+  <string name="button_pin_state_text">Change State</string>
+  <string name="pin_state_text">Arduino Pin state</string>
+  <string name="change_pin_state_value">OFF</string>
+  <string name="sensor_text">Sensor value</string>
+  <string name="sensor_value">-</string>
+  <string name="debug_text">Debug</string>
+  <string name="debug_value">-</string>
+  <string name="exit">Exit</string>
+  <string name="abort">Abort</string>
+</resources>
