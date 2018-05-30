@@ -57,9 +57,10 @@ NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);  // APA3 (Gam
 //RCSwitch mySwitch = RCSwitch();            // Remote Control, Action, new model (on-off), use pin <RFPin>
 
 char actionDevice = 'A';                 // Variable to store Action Device id ('A', 'B', 'C')
-bool pinState = false;                   // Variable to store actual pin state
+bool pinState1 = false;                  // Variable to store actual pin state
+bool pinState2 = false; 
+bool pinState3 = false; 
 bool pinChange = false;                  // Variable to store actual pin change
-int pinNumber = 0;
 int  sensorValue = 0;                    // Variable to store actual sensor value
 
 void setup()
@@ -127,16 +128,16 @@ void loop()
    // Do what needs to be done while the socket is connected.
    while (ethernetClient.connected()) 
    {
-      checkEvent(switchPin, pinState);          // update pin state
+      checkEvent(switchPin, pinState1);          // update pin state
       sensorValue = readSensor(0, 100);         // update sensor value
         
       // Activate pin based op pinState
       if (pinChange) {
-         if (pinState) { 
-          digitalWrite(ledPin, HIGH); switchDefault(true, pinNumber); 
+         if (pinState1) { 
+          digitalWrite(ledPin, HIGH); switchDefault(true, pinState1, pinState2, pinState3); 
           }
          else { 
-          switchDefault(false, pinNumber); digitalWrite(ledPin, LOW);
+          switchDefault(false, pinState1, pinState2, pinState3); digitalWrite(ledPin, LOW);
           }
          pinChange = false;
       }
@@ -153,16 +154,15 @@ void loop()
 }
 
 // Choose and switch your Kaku device, state is true/false (HIGH/LOW)
-void switchDefault(bool state, int pin)
+void switchDefault(bool state, bool pinState1, bool pinState2, bool pinState3)
 {   
-  if (pin == 1){
+  if (pinState1){
    apa3Transmitter.sendUnit(0, state);   
   }
-  else if(pin == 2){
-    
+  if(pinState2){
    apa3Transmitter.sendUnit(1, state); 
   }
-  else if(pin == 3){
+  if(pinState3){
     apa3Transmitter.sendUnit(2, state);  
   }
    
@@ -184,35 +184,52 @@ void executeCommand(char cmd)
             Serial.print("Sensor: "); Serial.println(buf);
             break;
          case 's': // Report switch state to the app
-            if (pinState) { server.write(" ON\n"); Serial.println("Pin state is ON"); }  // always send 4 chars
-            else { server.write("OFF\n"); Serial.println("Pin state is OFF"); }
+            if (pinState1) 
+            { 
+              server.write(" ON\n"); Serial.println("Pin state is ON"); 
+            }  // always send 4 chars
+            else 
+            { 
+              server.write("OFF\n"); Serial.println("Pin state is OFF"); 
+            }
             break;
+            
          case '1': // Toggle state; If state is already ON then turn it OFF
-            if (pinState) { 
-              pinState = false; Serial.println("Set pin state to \"OFF\"");}
-            else { 
-              pinState = true; Serial.println("Set pin state to \"ON\"");
-               pinNumber = 1; }  
+            if (pinState1) 
+            { 
+              pinState1 = false; Serial.println("Set pin state to \"OFF\"");
+            }
+            else 
+            { 
+              pinState1 = true; Serial.println("Set pin state to \"ON\"");
+            }  
             pinChange = true; 
             break;
             
          case '2': // Toggle state; If state is already ON then turn it OFF
-            if (pinState) { 
-              pinState = false; Serial.println("Set pin state to \"OFF\""); }
-            else { 
-              pinState = true; Serial.println("Set pin state to \"ON\"");
-              pinNumber = 2;}  
+            if (pinState2) 
+            { 
+              pinState2 = false; Serial.println("Set pin state to \"OFF\"");
+            }
+            else 
+            { 
+              pinState2 = true; Serial.println("Set pin state to \"ON\"");
+            }  
             pinChange = true; 
             break;
             
          case '3': // Toggle state; If state is already ON then turn it OFF
-            if (pinState) { 
-              pinState = false; Serial.println("Set pin state to \"OFF\""); }
-            else { 
-              pinState = true; Serial.println("Set pin state to \"ON\"");
-              pinNumber = 3; }  
+            if (pinState3) 
+            { 
+              pinState3 = false; Serial.println("Set pin state to \"OFF\"");
+            }
+            else 
+            { 
+              pinState3 = true; Serial.println("Set pin state to \"ON\"");
+            }  
             pinChange = true; 
             break;
+            
          case 'i':    
             digitalWrite(infoPin, HIGH);
             break;
