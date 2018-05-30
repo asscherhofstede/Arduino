@@ -28,3 +28,96 @@ Y:\CloudStation\Development\Xamarin\Domotica2\Domotica\obj\Debug\R.cs.flag
 Y:\CloudStation\Development\Xamarin\Domotica2\Domotica\obj\Debug\uploadflags.txt
 Y:\CloudStation\Development\Xamarin\Domotica2\Domotica\obj\Debug\DomoticaSS.dll.mdb
 Y:\CloudStation\Development\Xamarin\Domotica2\Domotica\bin\Debug\DomoticaSS.dll.mdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Domotica.dll
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Domotica.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Domotica.Domotica.apk
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Domotica.Domotica-Signed.apk
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\Domotica.csprojAssemblyReference.cache
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\Domotica.csproj.CoreCompileInputs.cache
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\Domotica.dll
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\Domotica.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\android\bin\Domotica.Domotica.apk
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\res\layout\main.xml
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\res\values\strings.xml
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\res\drawable\icon.png
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\res\menu\menu.xml
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\R.cs.flag
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\R.txt
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\uploadflags.txt
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Mono.Android.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\mscorlib.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.Core.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.Xml.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.Xml.Linq.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.ComponentModel.Composition.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.Net.Http.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.Runtime.Serialization.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\System.ServiceModel.Internals.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Mono.Security.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\Mono.Android.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\mscorlib.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.Core.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.Xml.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.Xml.Linq.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.Net.Http.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\Mono.Security.pdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\linksrc\Domotica.dll.mdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\bin\Debug\Domotica.dll.mdb
+D:\NHL HBO ICT\Jaar 1\Project Domotica A\Domotica\Domotica\obj\Debug\android\assets\Domotica.dll.mdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\Domotica.dll
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\Domotica.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.dll
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.Domotica.apk
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.Domotica-Signed.apk
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\Domotica.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\bin\Domotica.Domotica.apk
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\res\layout\main.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\res\values\strings.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\res\drawable\icon.png
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\res\menu\menu.xml
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\R.cs.flag
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\uploadflags.txt
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Mono.Android.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Mono.Security.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\mscorlib.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.ComponentModel.Composition.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.Core.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.Net.Http.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.Runtime.Serialization.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.ServiceModel.Internals.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.Xml.Linq.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\System.Xml.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\Mono.Android.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\mscorlib.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.Core.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.Xml.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.Xml.Linq.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.Net.Http.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\Mono.Security.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\Domotica.dll.mdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.dll.mdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Domotica.dll.mdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Android.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Security.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\mscorlib.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ComponentModel.Composition.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Core.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Net.Http.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.Serialization.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.Linq.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\bin\Debug\Domotica.dll
+C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\linksrc\Domotica.dll.mdb

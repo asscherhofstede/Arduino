@@ -1,0 +1,4 @@
+Domotica.MainActivity, Domotica;md5ad6330c6eb7358bd23d386c3c1618973.MainActivity
+Domotica.MainActivity, Domotica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ad6330c6eb7358bd23d386c3c1618973.MainActivity
+Domotica.MainActivity;md5ad6330c6eb7358bd23d386c3c1618973.MainActivity
+domotica.MainActivity;md5ad6330c6eb7358bd23d386c3c1618973.MainActivity

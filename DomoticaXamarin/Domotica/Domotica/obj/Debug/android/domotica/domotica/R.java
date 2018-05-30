@@ -14,12 +14,14 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int abort=0x7f060012;
-        public static final int buttonChangePinState=0x7f06000a;
+        public static final int abort=0x7f060014;
+        public static final int buttonChangePinState1=0x7f06000a;
+        public static final int buttonChangePinState2=0x7f060011;
+        public static final int buttonChangePinState3=0x7f060012;
         public static final int buttonConnect=0x7f060009;
         public static final int editTextIPAddress=0x7f060007;
         public static final int editTextIPPort=0x7f060008;
-        public static final int exit=0x7f060011;
+        public static final int exit=0x7f060013;
         public static final int relativeLayout1=0x7f060000;
         public static final int textViewChangePinState=0x7f06000b;
         public static final int textViewChangePinStateValue=0x7f06000c;
@@ -41,23 +43,25 @@ public final class R {
         public static final int menu=0x7f050000;
     }
     public static final class string {
-        public static final int abort=0x7f040012;
+        public static final int abort=0x7f040014;
         public static final int application_name=0x7f040000;
         public static final int arduino_server_connect=0x7f040004;
         public static final int arduino_server_text=0x7f040003;
         public static final int button_connect_text=0x7f040009;
-        public static final int button_pin_state_text=0x7f04000a;
-        public static final int change_pin_state_value=0x7f04000c;
-        public static final int debug_text=0x7f04000f;
-        public static final int debug_value=0x7f040010;
-        public static final int exit=0x7f040011;
+        public static final int button_pin_state_text1=0x7f04000a;
+        public static final int button_pin_state_text2=0x7f04000b;
+        public static final int button_pin_state_text3=0x7f04000c;
+        public static final int change_pin_state_value=0x7f04000e;
+        public static final int debug_text=0x7f040011;
+        public static final int debug_value=0x7f040012;
+        public static final int exit=0x7f040013;
         public static final int ip_address_text=0x7f040005;
         public static final int ip_address_value=0x7f040006;
         public static final int ip_port_text=0x7f040007;
         public static final int ip_port_value=0x7f040008;
-        public static final int pin_state_text=0x7f04000b;
-        public static final int sensor_text=0x7f04000d;
-        public static final int sensor_value=0x7f04000e;
+        public static final int pin_state_text=0x7f04000d;
+        public static final int sensor_text=0x7f04000f;
+        public static final int sensor_value=0x7f040010;
         public static final int timer_state_text=0x7f040001;
         public static final int timer_state_value=0x7f040002;
     }

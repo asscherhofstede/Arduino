@@ -52,7 +52,9 @@ namespace Domotica
         // Variables (components/controls)
         // Controls on GUI
         Button buttonConnect;
-        Button buttonChangePinState;
+        Button buttonChangePinState1;
+        Button buttonChangePinState2;
+        Button buttonChangePinState3;
         TextView textViewServerConnect, textViewTimerStateValue;
         public TextView textViewChangePinStateValue, textViewSensorValue, textViewDebugValue;
         EditText editTextIPAddress, editTextIPPort;
@@ -71,10 +73,13 @@ namespace Domotica
 
             // find and set the controls, so it can be used in the code
             buttonConnect = FindViewById<Button>(Resource.Id.buttonConnect);
-            buttonChangePinState = FindViewById<Button>(Resource.Id.buttonChangePinState);
+            buttonChangePinState1 = FindViewById<Button>(Resource.Id.buttonChangePinState1);
+            buttonChangePinState2 = FindViewById<Button>(Resource.Id.buttonChangePinState2);
+            buttonChangePinState3 = FindViewById<Button>(Resource.Id.buttonChangePinState3);
             textViewTimerStateValue = FindViewById<TextView>(Resource.Id.textViewTimerStateValue);
             textViewServerConnect = FindViewById<TextView>(Resource.Id.textViewServerConnect);
             textViewChangePinStateValue = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue);
+
             textViewSensorValue = FindViewById<TextView>(Resource.Id.textViewSensorValue);
             textViewDebugValue = FindViewById<TextView>(Resource.Id.textViewDebugValue);
             editTextIPAddress = FindViewById<EditText>(Resource.Id.editTextIPAddress);
@@ -83,8 +88,8 @@ namespace Domotica
             UpdateConnectionState(4, "Disconnected");
 
             // Init commandlist, scheduled by socket timer
-            commandList.Add(new Tuple<string, TextView>("s", textViewChangePinStateValue));
-            commandList.Add(new Tuple<string, TextView>("a", textViewSensorValue));
+            commandList.Add(new Tuple<string, TextView>("a", textViewChangePinStateValue));
+            commandList.Add(new Tuple<string, TextView>("d", textViewSensorValue));
 
             this.Title = this.Title + " (timer sockets)";
 
@@ -126,12 +131,33 @@ namespace Domotica
                 };
             }
 
-            //Add the "Change pin state" button handler.
-            if (buttonChangePinState != null)
+            //Add the "Change pin state 1" button handler.
+            if (buttonChangePinState1 != null)
             {
-                buttonChangePinState.Click += (sender, e) =>
+                buttonChangePinState1.Click += (sender, e) =>
                 {
-                    socket.Send(Encoding.ASCII.GetBytes("t"));                 // Send toggle-command to the Arduino
+                    socket.Send(Encoding.ASCII.GetBytes("1"));                 // Send toggle-command to the Arduino
+                    socket.Send(Encoding.ASCII.GetBytes("a"));
+                };
+            }
+
+            //Add the "Change pin state 2" button handler.
+            if (buttonChangePinState2 != null)
+            {
+                buttonChangePinState2.Click += (sender, e) =>
+                {
+                    socket.Send(Encoding.ASCII.GetBytes("2"));                 // Send toggle-command to the Arduino
+                    socket.Send(Encoding.ASCII.GetBytes("b"));                 // Send 
+                };
+            }
+
+            //Add the "Change pin state 3" button handler.
+            if (buttonChangePinState3 != null)
+            {
+                buttonChangePinState3.Click += (sender, e) =>
+                {
+                    socket.Send(Encoding.ASCII.GetBytes("3"));                 // Send toggle-command to the Arduino
+                    socket.Send(Encoding.ASCII.GetBytes("c"));
                 };
             }
         }
@@ -205,7 +231,9 @@ namespace Domotica
                     textViewServerConnect.SetTextColor(color);
                     buttonConnect.Enabled = butConEnabled;
                 }
-                buttonChangePinState.Enabled = butPinEnabled;
+                buttonChangePinState1.Enabled = butPinEnabled;
+                buttonChangePinState2.Enabled = butPinEnabled;
+                buttonChangePinState3.Enabled = butPinEnabled;
             });
         }
 

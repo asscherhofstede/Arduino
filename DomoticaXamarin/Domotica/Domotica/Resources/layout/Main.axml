@@ -89,11 +89,11 @@
             android:layout_alignParentLeft="true"
             android:backgroundTint="#add8e6ff" />
         <Button
-            android:text="@string/button_pin_state_text"
+            android:text="@string/button_pin_state_text1"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/editTextIPPort"
-            android:id="@+id/buttonChangePinState"
+            android:id="@+id/buttonChangePinState1"
             android:layout_alignParentRight="true"
             android:backgroundTint="#add8e6ff" />
         <TextView
@@ -110,7 +110,7 @@
             android:layout_height="30dp"
             android:id="@+id/textViewChangePinStateValue"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/buttonChangePinState"
+            android:layout_below="@id/buttonChangePinState1"
             android:textAppearance="?android:attr/textAppearanceMedium" />
         <TextView
             android:text="@string/sensor_text"
@@ -145,4 +145,16 @@
             android:layout_below="@id/textViewSensorValue"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
+    <Button
+        android:text="@string/button_pin_state_text2"
+        android:id="@+id/buttonChangePinState2"
+        android:backgroundTint="#add8e6ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="@string/button_pin_state_text3"
+        android:id="@+id/buttonChangePinState3"
+        android:backgroundTint="#add8e6ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
