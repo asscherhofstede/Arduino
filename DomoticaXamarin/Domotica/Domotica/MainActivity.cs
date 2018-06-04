@@ -42,6 +42,7 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using Android.Graphics;
 using System.Threading.Tasks;
+using Android.Util;
 
 namespace Domotica
 {
@@ -51,12 +52,11 @@ namespace Domotica
     {
         // Variables (components/controls)
         // Controls on GUI
-        Button buttonConnect;
-        Button buttonChangePinState1;
-        Button buttonChangePinState2;
-        Button buttonChangePinState3;
+        Button buttonConnect, buttonChangePinState1, buttonChangePinState2, buttonChangePinState3;
         TextView textViewServerConnect, textViewTimerStateValue;
-        public TextView textViewChangePinStateValue, textViewSensorValue, textViewDebugValue;
+        public TextView textViewChangePinStateValue1, textViewSensorValue1, textViewDebugValue1;
+        public TextView textViewChangePinStateValue2, textViewSensorValue2, textViewDebugValue2;
+        public TextView textViewChangePinStateValue3, textViewSensorValue3, textViewDebugValue3;
         EditText editTextIPAddress, editTextIPPort;
 
         Timer timerClock, timerSockets;             // Timers   
@@ -78,18 +78,28 @@ namespace Domotica
             buttonChangePinState3 = FindViewById<Button>(Resource.Id.buttonChangePinState3);
             textViewTimerStateValue = FindViewById<TextView>(Resource.Id.textViewTimerStateValue);
             textViewServerConnect = FindViewById<TextView>(Resource.Id.textViewServerConnect);
-            textViewChangePinStateValue = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue);
+            textViewChangePinStateValue1 = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue1);
+            textViewChangePinStateValue2 = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue2);
+            textViewChangePinStateValue3 = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue3);
 
-            textViewSensorValue = FindViewById<TextView>(Resource.Id.textViewSensorValue);
-            textViewDebugValue = FindViewById<TextView>(Resource.Id.textViewDebugValue);
+            textViewSensorValue1 = FindViewById<TextView>(Resource.Id.textViewSensorValue1);
+            textViewDebugValue1 = FindViewById<TextView>(Resource.Id.textViewDebugValue1);
+            textViewSensorValue2 = FindViewById<TextView>(Resource.Id.textViewSensorValue2);
+            textViewDebugValue2 = FindViewById<TextView>(Resource.Id.textViewDebugValue2);
+            textViewSensorValue3 = FindViewById<TextView>(Resource.Id.textViewSensorValue3);
+            textViewDebugValue3 = FindViewById<TextView>(Resource.Id.textViewDebugValue3);
             editTextIPAddress = FindViewById<EditText>(Resource.Id.editTextIPAddress);
             editTextIPPort = FindViewById<EditText>(Resource.Id.editTextIPPort);
 
             UpdateConnectionState(4, "Disconnected");
 
             // Init commandlist, scheduled by socket timer
-            commandList.Add(new Tuple<string, TextView>("a", textViewChangePinStateValue));
-            commandList.Add(new Tuple<string, TextView>("d", textViewSensorValue));
+            commandList.Add(new Tuple<string, TextView>("a", textViewChangePinStateValue1));
+            commandList.Add(new Tuple<string, TextView>("b", textViewChangePinStateValue2));
+            commandList.Add(new Tuple<string, TextView>("c", textViewChangePinStateValue3));
+            //commandList.Add(new Tuple<string, TextView>("d", textViewSensorValue1));
+            //commandList.Add(new Tuple<string, TextView>("e", textViewSensorValue2));
+            //commandList.Add(new Tuple<string, TextView>("f", textViewSensorValue3));
 
             this.Title = this.Title + " (timer sockets)";
 
@@ -107,13 +117,20 @@ namespace Domotica
             {
                 //RunOnUiThread(() =>
                 //{
-                    if (socket != null) // only if socket exists
+                if (socket != null) // only if socket exists
+                {
+                    Log.Info("Domotica", Convert.ToString(listIndex));
+                    // Send a command to the Arduino server on every tick (loop though list)
+                    if (++listIndex >= commandList.Count)
                     {
-                        // Send a command to the Arduino server on every tick (loop though list)
-                        UpdateGUI(executeCommand(commandList[listIndex].Item1), commandList[listIndex].Item2);  //e.g. UpdateGUI(executeCommand("s"), textViewChangePinStateValue);
-                        if (++listIndex >= commandList.Count) listIndex = 0;
+                        listIndex = 0;
                     }
-                    else timerSockets.Enabled = false;  // If socket broken -> disable timer
+                    //UpdateGUI(executeCommand(commandList[listIndex].Item1), commandList[listIndex].Item2);  //e.g. UpdateGUI(executeCommand("s"), textViewChangePinStateValue);
+                }
+                else
+                {
+                    timerSockets.Enabled = false;  // If socket broken -> disable timer
+                }
                 //});
             };
 
@@ -137,7 +154,8 @@ namespace Domotica
                 buttonChangePinState1.Click += (sender, e) =>
                 {
                     socket.Send(Encoding.ASCII.GetBytes("1"));                 // Send toggle-command to the Arduino
-                    socket.Send(Encoding.ASCII.GetBytes("a"));
+                    //socket.Send(Encoding.ASCII.GetBytes("a"));
+                    UpdateGUI(executeCommand(commandList[0].Item1), commandList[0].Item2);
                 };
             }
 
@@ -147,7 +165,8 @@ namespace Domotica
                 buttonChangePinState2.Click += (sender, e) =>
                 {
                     socket.Send(Encoding.ASCII.GetBytes("2"));                 // Send toggle-command to the Arduino
-                    socket.Send(Encoding.ASCII.GetBytes("b"));                 // Send 
+                    //socket.Send(Encoding.ASCII.GetBytes("b"));
+                    UpdateGUI(executeCommand(commandList[1].Item1), commandList[1].Item2);
                 };
             }
 
@@ -157,7 +176,8 @@ namespace Domotica
                 buttonChangePinState3.Click += (sender, e) =>
                 {
                     socket.Send(Encoding.ASCII.GetBytes("3"));                 // Send toggle-command to the Arduino
-                    socket.Send(Encoding.ASCII.GetBytes("c"));
+                    //socket.Send(Encoding.ASCII.GetBytes("c"));
+                    UpdateGUI(executeCommand(commandList[2].Item1), commandList[2].Item2);
                 };
             }
         }
@@ -242,10 +262,50 @@ namespace Domotica
         {
             RunOnUiThread(() =>
             {
-                if (result == "OFF") textview.SetTextColor(Color.Red);
-                else if (result == " ON") textview.SetTextColor(Color.Green);
-                else textview.SetTextColor(Color.White);  
-                textview.Text = result;
+                if(result == " O1")
+                {
+                    textview.SetTextColor(Color.Green);
+                    textview.Text = "ON";
+                }
+                else if (result == "F-1")
+                {
+                    textview.SetTextColor(Color.Red);
+                    textview.Text = "OFF";
+                }
+                else if (result == " O2")
+                {
+                    textview.SetTextColor(Color.Green);
+                    textview.Text = "ON";
+                }
+                else if (result == "F-2")
+                {
+                    textview.SetTextColor(Color.Red);
+                    textview.Text = "OFF";
+                }
+                else if (result == " O3")
+                {
+                    textview.SetTextColor(Color.Green);
+                    textview.Text = "ON";
+                }
+                else if (result == "F-3")
+                {
+                    textview.SetTextColor(Color.Red);
+                    textview.Text = "OFF";
+                }
+                else
+                {
+                    textview.SetTextColor(Color.White);
+                    textview.Text = result;
+                }
+                //if socket.recieve == ON1 {}
+
+                //if socket.recieve == 2 {}
+                //if socket.recieve == 3 {}
+
+                //if (result == "OFF") textview.SetTextColor(Color.Red);
+                //else if (result == " ON") textview.SetTextColor(Color.Green);
+                //else textview.SetTextColor(Color.White);  
+                //textview.Text = result;
             });
         }
 
