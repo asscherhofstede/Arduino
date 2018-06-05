@@ -52,12 +52,12 @@ namespace Domotica
     {
         // Variables (components/controls)
         // Controls on GUI
-        Button buttonConnect, buttonChangePinState1, buttonChangePinState2, buttonChangePinState3;
+        Button buttonConnect, buttonChangePinState1, buttonChangePinState2, buttonChangePinState3, refreshButton;
         TextView textViewServerConnect, textViewTimerStateValue;
         public TextView textViewChangePinStateValue1, textViewSensorValue1, textViewDebugValue1;
         public TextView textViewChangePinStateValue2, textViewSensorValue2, textViewDebugValue2;
         public TextView textViewChangePinStateValue3, textViewSensorValue3, textViewDebugValue3;
-        EditText editTextIPAddress, editTextIPPort;
+        EditText editTextIPAddress, editTextIPPort, refreshTextInput;
 
         Timer timerClock, timerSockets;             // Timers   
         Socket socket = null;                       // Socket   
@@ -76,6 +76,8 @@ namespace Domotica
             buttonChangePinState1 = FindViewById<Button>(Resource.Id.buttonChangePinState1);
             buttonChangePinState2 = FindViewById<Button>(Resource.Id.buttonChangePinState2);
             buttonChangePinState3 = FindViewById<Button>(Resource.Id.buttonChangePinState3);
+            refreshButton = FindViewById<Button>(Resource.Id.refreshButton);
+
             textViewTimerStateValue = FindViewById<TextView>(Resource.Id.textViewTimerStateValue);
             textViewServerConnect = FindViewById<TextView>(Resource.Id.textViewServerConnect);
             textViewChangePinStateValue1 = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue1);
@@ -88,18 +90,21 @@ namespace Domotica
             textViewDebugValue2 = FindViewById<TextView>(Resource.Id.textViewDebugValue2);
             textViewSensorValue3 = FindViewById<TextView>(Resource.Id.textViewSensorValue3);
             textViewDebugValue3 = FindViewById<TextView>(Resource.Id.textViewDebugValue3);
+
+
             editTextIPAddress = FindViewById<EditText>(Resource.Id.editTextIPAddress);
             editTextIPPort = FindViewById<EditText>(Resource.Id.editTextIPPort);
+            refreshTextInput = FindViewById<EditText>(Resource.Id.refreshTextInput);
 
             UpdateConnectionState(4, "Disconnected");
 
             // Init commandlist, scheduled by socket timer
-            commandList.Add(new Tuple<string, TextView>("a", textViewChangePinStateValue1));
-            commandList.Add(new Tuple<string, TextView>("b", textViewChangePinStateValue2));
-            commandList.Add(new Tuple<string, TextView>("c", textViewChangePinStateValue3));
-            //commandList.Add(new Tuple<string, TextView>("d", textViewSensorValue1));
-            //commandList.Add(new Tuple<string, TextView>("e", textViewSensorValue2));
-            //commandList.Add(new Tuple<string, TextView>("f", textViewSensorValue3));
+            commandList.Add(new Tuple<string, TextView>("d", textViewChangePinStateValue1));
+            commandList.Add(new Tuple<string, TextView>("e", textViewChangePinStateValue2));
+            commandList.Add(new Tuple<string, TextView>("f", textViewChangePinStateValue3));
+            commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue1));
+            //commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue2));
+            //commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue3));
 
             this.Title = this.Title + " (timer sockets)";
 
@@ -125,7 +130,7 @@ namespace Domotica
                     {
                         listIndex = 0;
                     }
-                    //UpdateGUI(executeCommand(commandList[listIndex].Item1), commandList[listIndex].Item2);  //e.g. UpdateGUI(executeCommand("s"), textViewChangePinStateValue);
+                    UpdateGUI(executeCommand(commandList[listIndex].Item1), commandList[listIndex].Item2);  //e.g. UpdateGUI(executeCommand("s"), textViewChangePinStateValue);
                 }
                 else
                 {
@@ -153,9 +158,7 @@ namespace Domotica
             {
                 buttonChangePinState1.Click += (sender, e) =>
                 {
-                    socket.Send(Encoding.ASCII.GetBytes("1"));                 // Send toggle-command to the Arduino
-                    //socket.Send(Encoding.ASCII.GetBytes("a"));
-                    UpdateGUI(executeCommand(commandList[0].Item1), commandList[0].Item2);
+                    socket.Send(Encoding.ASCII.GetBytes("a"));                 // Send toggle-command to the Arduino
                 };
             }
 
@@ -164,9 +167,7 @@ namespace Domotica
             {
                 buttonChangePinState2.Click += (sender, e) =>
                 {
-                    socket.Send(Encoding.ASCII.GetBytes("2"));                 // Send toggle-command to the Arduino
-                    //socket.Send(Encoding.ASCII.GetBytes("b"));
-                    UpdateGUI(executeCommand(commandList[1].Item1), commandList[1].Item2);
+                    socket.Send(Encoding.ASCII.GetBytes("b"));                 // Send toggle-command to the Arduino
                 };
             }
 
@@ -175,9 +176,16 @@ namespace Domotica
             {
                 buttonChangePinState3.Click += (sender, e) =>
                 {
-                    socket.Send(Encoding.ASCII.GetBytes("3"));                 // Send toggle-command to the Arduino
-                    //socket.Send(Encoding.ASCII.GetBytes("c"));
-                    UpdateGUI(executeCommand(commandList[2].Item1), commandList[2].Item2);
+                    socket.Send(Encoding.ASCII.GetBytes("c"));                 // Send toggle-command to the Arduino
+                };
+            }
+
+            if (refreshButton != null)
+            {
+                refreshButton.Click += (sender, e) =>
+                {
+                    int frequency = 1000 / Convert.ToInt32(refreshTextInput.Text);
+                    timerSockets.Interval = frequency;
                 };
             }
         }
@@ -254,6 +262,7 @@ namespace Domotica
                 buttonChangePinState1.Enabled = butPinEnabled;
                 buttonChangePinState2.Enabled = butPinEnabled;
                 buttonChangePinState3.Enabled = butPinEnabled;
+                refreshButton.Enabled = butPinEnabled;
             });
         }
 

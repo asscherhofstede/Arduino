@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
-    <xs:documentation>v26</xs:documentation>
-    <xs:documentation>29-5-2018 14:11:50</xs:documentation>
+    <xs:documentation>v25</xs:documentation>
+    <xs:documentation>5-6-2018 16:10:26</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -181,6 +181,8 @@
             <xs:enumeration value="@string/ip_port_text" />
             <xs:enumeration value="@string/ip_port_value" />
             <xs:enumeration value="@string/pin_state_text" />
+            <xs:enumeration value="@string/refresh_Button" />
+            <xs:enumeration value="@string/refresh_Text_Input" />
             <xs:enumeration value="@string/sensor_text" />
             <xs:enumeration value="@string/sensor_value" />
             <xs:enumeration value="@string/timer_state_text" />

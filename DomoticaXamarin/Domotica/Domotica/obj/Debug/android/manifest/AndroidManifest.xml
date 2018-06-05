@@ -5,7 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="Domotica" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="@string/application_name" android:screenOrientation="portrait" android:name="md5ad6330c6eb7358bd23d386c3c1618973.MainActivity">
+    <activity android:icon="@drawable/icon" android:label="@string/application_name" android:screenOrientation="portrait" android:name="md544338981f8b3a72cd3b6f0015dae07b6.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

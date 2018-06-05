@@ -259,5 +259,24 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/textViewSensorValue3"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!--Refresh instellen-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/refreshTextInput"
+            android:text="@string/refresh_Text_Input"
+            android:lines="1"
+            android:minLines="1"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_below="@id/textViewDebugValue3" />
+        <Button
+            android:text="@string/refresh_Button"
+            android:id="@+id/refreshButton"
+            android:backgroundTint="#add8e6ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refreshTextInput" />
     </RelativeLayout>
 </LinearLayout>

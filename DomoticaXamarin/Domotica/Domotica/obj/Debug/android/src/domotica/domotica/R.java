@@ -14,14 +14,16 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int abort=0x7f060020;
+        public static final int abort=0x7f060022;
         public static final int buttonChangePinState1=0x7f06000a;
         public static final int buttonChangePinState2=0x7f060011;
         public static final int buttonChangePinState3=0x7f060018;
         public static final int buttonConnect=0x7f060009;
         public static final int editTextIPAddress=0x7f060007;
         public static final int editTextIPPort=0x7f060008;
-        public static final int exit=0x7f06001f;
+        public static final int exit=0x7f060021;
+        public static final int refreshButton=0x7f060020;
+        public static final int refreshTextInput=0x7f06001f;
         public static final int relativeLayout1=0x7f060000;
         public static final int textViewChangePinState1=0x7f06000b;
         public static final int textViewChangePinState2=0x7f060012;
@@ -72,6 +74,8 @@ public final class R {
         public static final int ip_port_text=0x7f040007;
         public static final int ip_port_value=0x7f040008;
         public static final int pin_state_text=0x7f04000d;
+        public static final int refresh_Button=0x7f040015;
+        public static final int refresh_Text_Input=0x7f040016;
         public static final int sensor_text=0x7f04000f;
         public static final int sensor_value=0x7f040010;
         public static final int timer_state_text=0x7f040001;

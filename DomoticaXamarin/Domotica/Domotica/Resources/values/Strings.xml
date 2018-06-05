@@ -21,4 +21,6 @@
   <string name="debug_value">-</string>
   <string name="exit">Exit</string>
   <string name="abort">Abort</string>
+  <string name="refresh_Button">Set Refresh Rate</string>
+  <string name="refresh_Text_Input">1</string>
 </resources>
