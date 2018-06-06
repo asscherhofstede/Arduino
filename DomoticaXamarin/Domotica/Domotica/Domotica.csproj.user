@@ -2,8 +2,8 @@
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
-    <AndroidDesignerPreferredDevice>pixel_xl</AndroidDesignerPreferredDevice>
-    <SelectedDevice>OnePlus A5010</SelectedDevice>
+    <AndroidDesignerPreferredDevice>Nexus 6P</AndroidDesignerPreferredDevice>
+    <SelectedDevice>Android_Accelerated_x86_Nougat</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
   </PropertyGroup>
 </Project>

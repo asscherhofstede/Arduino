@@ -43,17 +43,17 @@ namespace Domotica
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F020036
-			public const int abort = 2130837558;
+			// aapt resource value: 0x7F020027
+			public const int abort = 2130837543;
 			
-			// aapt resource value: 0x7F020012
-			public const int buttonChangePinState1 = 2130837522;
+			// aapt resource value: 0x7F020013
+			public const int buttonChangePinState1 = 2130837523;
 			
-			// aapt resource value: 0x7F020019
-			public const int buttonChangePinState2 = 2130837529;
+			// aapt resource value: 0x7F020014
+			public const int buttonChangePinState2 = 2130837524;
 			
-			// aapt resource value: 0x7F020026
-			public const int buttonChangePinState3 = 2130837542;
+			// aapt resource value: 0x7F020015
+			public const int buttonChangePinState3 = 2130837525;
 			
 			// aapt resource value: 0x7F020011
 			public const int buttonConnect = 2130837521;
@@ -64,53 +64,32 @@ namespace Domotica
 			// aapt resource value: 0x7F020010
 			public const int editTextIPPort = 2130837520;
 			
-			// aapt resource value: 0x7F020035
-			public const int exit = 2130837557;
+			// aapt resource value: 0x7F020026
+			public const int exit = 2130837542;
 			
-			// aapt resource value: 0x7F020034
-			public const int refreshButton = 2130837556;
+			// aapt resource value: 0x7F020012
+			public const int LinearLayout02 = 2130837522;
 			
-			// aapt resource value: 0x7F020033
-			public const int refreshTextInput = 2130837555;
+			// aapt resource value: 0x7F020016
+			public const int LinearLayout03 = 2130837526;
+			
+			// aapt resource value: 0x7F020025
+			public const int refreshButton = 2130837541;
+			
+			// aapt resource value: 0x7F020024
+			public const int refreshTextInput = 2130837540;
 			
 			// aapt resource value: 0x7F020002
 			public const int relativeLayout1 = 2130837506;
 			
-			// aapt resource value: 0x7F020013
-			public const int textViewChangePinState1 = 2130837523;
-			
-			// aapt resource value: 0x7F020020
-			public const int textViewChangePinState2 = 2130837536;
-			
-			// aapt resource value: 0x7F020027
-			public const int textViewChangePinState3 = 2130837543;
-			
-			// aapt resource value: 0x7F020014
-			public const int textViewChangePinStateValue1 = 2130837524;
-			
-			// aapt resource value: 0x7F020021
-			public const int textViewChangePinStateValue2 = 2130837537;
-			
-			// aapt resource value: 0x7F020028
-			public const int textViewChangePinStateValue3 = 2130837544;
-			
 			// aapt resource value: 0x7F020017
-			public const int textViewDebug1 = 2130837527;
-			
-			// aapt resource value: 0x7F020024
-			public const int textViewDebug2 = 2130837540;
-			
-			// aapt resource value: 0x7F020031
-			public const int textViewDebug3 = 2130837553;
+			public const int textViewChangePinStateValue1 = 2130837527;
 			
 			// aapt resource value: 0x7F020018
-			public const int textViewDebugValue1 = 2130837528;
+			public const int textViewChangePinStateValue2 = 2130837528;
 			
-			// aapt resource value: 0x7F020025
-			public const int textViewDebugValue2 = 2130837541;
-			
-			// aapt resource value: 0x7F020032
-			public const int textViewDebugValue3 = 2130837554;
+			// aapt resource value: 0x7F020019
+			public const int textViewChangePinStateValue3 = 2130837529;
 			
 			// aapt resource value: 0x7F020007
 			public const int textViewIPAddress = 2130837511;
@@ -118,23 +97,17 @@ namespace Domotica
 			// aapt resource value: 0x7F020008
 			public const int textViewIPPort = 2130837512;
 			
-			// aapt resource value: 0x7F020015
-			public const int textViewSensor1 = 2130837525;
+			// aapt resource value: 0x7F020020
+			public const int textViewSensor1 = 2130837536;
+			
+			// aapt resource value: 0x7F020021
+			public const int textViewSensor2 = 2130837537;
 			
 			// aapt resource value: 0x7F020022
-			public const int textViewSensor2 = 2130837538;
-			
-			// aapt resource value: 0x7F020029
-			public const int textViewSensor3 = 2130837545;
-			
-			// aapt resource value: 0x7F020016
-			public const int textViewSensorValue1 = 2130837526;
+			public const int textViewSensorValue1 = 2130837538;
 			
 			// aapt resource value: 0x7F020023
 			public const int textViewSensorValue2 = 2130837539;
-			
-			// aapt resource value: 0x7F020030
-			public const int textViewSensorValue3 = 2130837552;
 			
 			// aapt resource value: 0x7F020005
 			public const int textViewServer = 2130837509;

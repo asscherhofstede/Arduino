@@ -54,15 +54,17 @@ namespace Domotica
         // Controls on GUI
         Button buttonConnect, buttonChangePinState1, buttonChangePinState2, buttonChangePinState3, refreshButton;
         TextView textViewServerConnect, textViewTimerStateValue;
-        public TextView textViewChangePinStateValue1, textViewSensorValue1, textViewDebugValue1;
-        public TextView textViewChangePinStateValue2, textViewSensorValue2, textViewDebugValue2;
-        public TextView textViewChangePinStateValue3, textViewSensorValue3, textViewDebugValue3;
+        public TextView textViewChangePinStateValue1, textViewSensorValue1;
+        public TextView textViewChangePinStateValue2, textViewSensorValue2;
+        public TextView textViewChangePinStateValue3;
         EditText editTextIPAddress, editTextIPPort, refreshTextInput;
 
         Timer timerClock, timerSockets;             // Timers   
         Socket socket = null;                       // Socket   
         List<Tuple<string, TextView>> commandList = new List<Tuple<string, TextView>>();  // List for commands and response places on UI
         int listIndex = 0;
+        int frequency = 1000;
+        int temp;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -85,11 +87,7 @@ namespace Domotica
             textViewChangePinStateValue3 = FindViewById<TextView>(Resource.Id.textViewChangePinStateValue3);
 
             textViewSensorValue1 = FindViewById<TextView>(Resource.Id.textViewSensorValue1);
-            textViewDebugValue1 = FindViewById<TextView>(Resource.Id.textViewDebugValue1);
             textViewSensorValue2 = FindViewById<TextView>(Resource.Id.textViewSensorValue2);
-            textViewDebugValue2 = FindViewById<TextView>(Resource.Id.textViewDebugValue2);
-            textViewSensorValue3 = FindViewById<TextView>(Resource.Id.textViewSensorValue3);
-            textViewDebugValue3 = FindViewById<TextView>(Resource.Id.textViewDebugValue3);
 
 
             editTextIPAddress = FindViewById<EditText>(Resource.Id.editTextIPAddress);
@@ -103,7 +101,7 @@ namespace Domotica
             commandList.Add(new Tuple<string, TextView>("e", textViewChangePinStateValue2));
             commandList.Add(new Tuple<string, TextView>("f", textViewChangePinStateValue3));
             commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue1));
-            //commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue2));
+            commandList.Add(new Tuple<string, TextView>("h", textViewSensorValue2));
             //commandList.Add(new Tuple<string, TextView>("g", textViewSensorValue3));
 
             this.Title = this.Title + " (timer sockets)";
@@ -117,7 +115,7 @@ namespace Domotica
 
             // timer object, check Arduino state
             // Only one command can be serviced in an timer tick, schedule from list
-            timerSockets = new System.Timers.Timer() { Interval = 1000, Enabled = false }; // Interval >= 750
+            timerSockets = new System.Timers.Timer() { Interval = frequency, Enabled = false }; // Interval >= 750
             timerSockets.Elapsed += (obj, args) =>
             {
                 //RunOnUiThread(() =>
@@ -184,7 +182,15 @@ namespace Domotica
             {
                 refreshButton.Click += (sender, e) =>
                 {
-                    int frequency = 1000 / Convert.ToInt32(refreshTextInput.Text);
+                    if (Convert.ToInt32(refreshTextInput.Text) > 10)
+                    {
+                       temp  = 10;
+                    }
+                    else
+                    {
+                        temp = Convert.ToInt32(refreshTextInput.Text);
+                    }
+                    frequency = 1000 / temp;
                     timerSockets.Interval = frequency;
                 };
             }

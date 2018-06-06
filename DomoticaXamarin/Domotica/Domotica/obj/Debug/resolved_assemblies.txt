@@ -1,27 +1,27 @@
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Domotica.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Java.Interop.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Android.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\mscorlib.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Core.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.Linq.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Threading.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Collections.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Collections.Concurrent.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Linq.Expressions.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.Primitives.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Dynamic.Runtime.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ObjectModel.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Linq.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.Extensions.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.Extensions.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Net.Http.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.Serialization.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-C:\Users\Kevin\Desktop\School\Periode 4\Project Domotica\Project\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Security.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Domotica.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Java.Interop.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Android.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\mscorlib.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Core.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Xml.Linq.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Diagnostics.Debug.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Threading.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Collections.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Collections.Concurrent.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Linq.Expressions.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.Primitives.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Dynamic.Runtime.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ObjectModel.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Linq.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.Extensions.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Reflection.Extensions.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Net.Http.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.Runtime.Serialization.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+C:\Users\Gerlof\Desktop\DomoticaProject\DomoticaXamarin\Domotica\Domotica\obj\Debug\android\assets\Mono.Security.dll

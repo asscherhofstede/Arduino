@@ -10,7 +10,7 @@
 #define ledPin       8  // output, led used for "connect state": blinking = searching; continuously = connected
 #define infoPin      9  // output, more information
 #define analogPin    A0  // sensor value
-
+#define analogPin2   A1
 byte mac[] = { 0x40, 0x6c, 0x8f, 0x36, 0x84, 0x8a };
 EthernetServer server(3300);
 NewRemoteTransmitter apa3Transmitter(unitCodeApa3, RFPin, 260, 3);
@@ -19,7 +19,8 @@ bool connected = false;
 bool unit1 = false;
 bool unit2 = false;
 bool unit3 = false;
-int sensorValue = 0;
+int sensorValue1 = 0;
+int sensorValue2 = 0;
 int hertz = 1;
 String hz;
 int refreshrate;
@@ -35,7 +36,7 @@ void setup() {
   Serial.print("Listening on address: ");
   Serial.println(Ethernet.localIP());
   server.begin();
-  connected = true;
+  connected = true; 
 }
 
 void loop() {
@@ -51,8 +52,8 @@ void loop() {
   }
   while(ethernetClient.connected())
   {
-    sensorValue = readSensor(A0, 100);
-    
+    sensorValue1 = readSensor(A0, 100);
+    sensorValue2 = readSensor(A1, 100);
     char inByte = ethernetClient.read();
     executeCommand(inByte);
     inByte = NULL;
@@ -136,7 +137,12 @@ void executeCommand(char cmd)
       break;
 
       case 'g':
-        intToCharBuf(sensorValue, buf, 4);
+        intToCharBuf(sensorValue1, buf, 4);
+        server.write(buf, 4);
+      break;
+
+      case 'h':
+        intToCharBuf(sensorValue2, buf, 4);
         server.write(buf, 4);
       break;
   }
